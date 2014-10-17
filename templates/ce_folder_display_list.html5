@@ -9,6 +9,7 @@ if (isset($this->files) && ($this->files instanceof Contao\Model\Collection) && 
         <?  echo("</li>");
     }
     echo("</ul></div>");
+
 } else
     echo("<div class=\"folderDisp_error\"><p>Die Liste ist leer !</p></div>");
 ?>
