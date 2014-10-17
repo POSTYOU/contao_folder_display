@@ -1,0 +1,20 @@
+<?php $this->extend('block_searchable'); ?>
+
+<?php $this->block('content'); ?>
+
+<?php
+
+if (isset($this->files) && ($this->files instanceof Contao\Model\Collection) && !empty($this->files)) {
+    echo("<div class=\"folderDisp_list\"><ul>");
+    foreach ($this->files as $file) {
+        echo("<li>");?>
+        <?php $this->insert('ce_folder_display_cell', array($file)); ?>
+        <?  echo("</li>");
+    }
+    echo("</ul></div>");
+} else
+    echo("<div class=\"folderDisp_error\"><p>Die Liste ist leer !</p></div>");
+
+?>
+
+<?php $this->endblock(); ?>

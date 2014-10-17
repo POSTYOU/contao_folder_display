@@ -1,0 +1,6 @@
+<?php
+echo($this->arrData[0]->path);
+//var_dump($this->arrData[0]);
+?>
+
+
