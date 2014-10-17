@@ -1,9 +1,6 @@
 <?php $this->extend('block_searchable'); ?>
-
 <?php $this->block('content'); ?>
-
 <?php
-
 if (isset($this->files) && ($this->files instanceof Contao\Model\Collection) && !empty($this->files)) {
     echo("<div class=\"folderDisp_list\"><ul>");
     foreach ($this->files as $file) {
