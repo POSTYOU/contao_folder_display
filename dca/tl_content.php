@@ -1,4 +1,16 @@
-<?php if (!defined('TL_ROOT')) {
+<?php
+/**
+ * Folderdisplay
+ * Extension for Contao Open Source CMS (contao.org)
+ *
+ * Copyright (c) 2015 POSTYOU
+ *
+ * @package folder_display
+ * @author  Gerald Meier
+ * @link    http://www.postyou.de
+ * @license http://www.gnu.org/licenses/lgpl-3.0.html LGPL
+ */
+ if (!defined('TL_ROOT')) {
     die('You cannot access this file directly!');
 }
 
